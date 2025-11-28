@@ -1,12 +1,26 @@
 .noteframe-shelf-opend{
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 2rem 15rem 1fr; 
+    grid-template-rows: 2rem 15rem 1fr;
 }
 
 .noteframe-shelf-closed{
     display: grid;
     grid-template-columns: 1% 99%;
-    grid-template-rows: 2rem 15rem 1fr; 
+    grid-template-rows: 2rem 15rem 1fr;
+}
+
+.loading-message,
+.error-message {
+    grid-row: 3;
+    grid-column: 2;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.error-message {
+    color: #d32f2f;
 }
 

@@ -140,7 +140,13 @@ hr {
 
 .top-search-icon{
     width: 18px;
-    color: white;
-    cursor: default;
+    color: #161616;
+    cursor: pointer;
     margin-left: 15px;
+    transition: transform 0.2s;
+}
+
+.top-search-icon:hover{
+    transform: scale(1.2);
+    color: #000;
 }

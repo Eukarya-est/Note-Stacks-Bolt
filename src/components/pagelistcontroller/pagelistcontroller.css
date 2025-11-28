@@ -64,7 +64,7 @@ input[name=designated-num]{
     border-left: 2px solid #141a30;
     height: 14px;
     width: 2px;
-};
+}
 
 .page-bound {
     display: inline-block;
