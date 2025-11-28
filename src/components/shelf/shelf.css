@@ -1,0 +1,121 @@
+.shelf-container-opend{
+    position: fixed;
+    top: 70px;
+    grid-column: 1;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0px 0px 20px 0px rgba(22, 22, 22, 0.1);
+    z-index: 10;
+}
+
+.shelf-container-closed{
+    top: 50px;
+    grid-column: 1;
+    width: 5%;
+    height: 100%;
+    z-index: 10;
+}
+
+.shelf-opened{
+    margin-top: 2px;
+    z-index: 98;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.shelf-closed{
+    margin-top: 2px;
+    z-index: 98;
+    background-color: rgba(255, 255, 255, 0.2);
+    visibility: hidden;
+}
+
+.shelf-list{
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    padding: 0px;
+    margin-top: 50px;
+}
+
+.shelf-title{
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    color:white;
+    background: url(../../Images/bg-img.jpg);
+    background-repeat: no-repeat;   
+    background-clip: border-box; 
+    background-position: left;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.shelf-item-list{
+    display: block;
+    padding: 0;
+    list-style: none;
+}
+
+.loading-img{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+}
+
+.shelf-item{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: 300;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+.shelf-item:hover{
+    background: #141a30;
+    border-style: hidden;
+    padding: 7px;
+    color:rgb(255, 255, 255, 1);
+}       
+
+.shelf-item:hover:after,
+.shelf-item:hover:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 3px;
+    border-color: transparent;
+    background: linear-gradient(45deg, #00202e, #003f5c, #2c4875, #8a508f, #bc5090, #ff6361, #ff8531, #ffa600, #ffd380,
+    #ffa600, #ff6361, #bc5090, #8a508f, #2c4875, #003f5c, #00202e);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 30s linear infinite;
+}
+
+.shelf-item:after {
+	filter: blur(10px);
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+  
