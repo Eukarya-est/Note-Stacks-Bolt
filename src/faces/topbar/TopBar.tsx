@@ -38,12 +38,12 @@ export default function TopBar() {
           </div>
           <div className="top-right">
             <ul className="top-list">
+              <Search isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
               <FaSearch className="top-search-icon" onClick={openSearch} />
             </ul>
           </div>
         </div>
       </div>
-      <Search isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </>
   );
 }
